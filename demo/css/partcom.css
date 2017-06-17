@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+/*logo*/
+#logo{
+	width:990px;
+	margin:0 auto;
+	overflow:hidden;
+}
+#logo h1{
+	margin-left:10px;
+	float:left;
+}
+
+/*footer*/
+#footer{
+	width:980px;
+	margin:50px auto 20px auto;
+	text-align:center;
+}
+#footer p{
+	margin-top:10px;
+	line-height:14px;
+}
+#footer p a{
+	display:inline-block;
+	margin:0 8px;
+	font-size:14px;
+	line-height:14px;
+}
+#footer p a:hover{
+	color:#b2e0fb;
+	text-decoration:underline;
+}

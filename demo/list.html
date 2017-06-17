@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>列表页</title>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/requestAnimationFrame.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/protuct.js"></script>
+	</head>
+	<body>
+		<!--top-->
+		<div id="top">
+			<div class="topcon con">
+				<div class="top_left">
+					<p>送货至<span>北京</span><i></i></p>
+					<ul>
+						<li>
+							<i>A</i>
+							<a href="#">安徽</a>
+						</li>
+						<li>
+							<i>B</i>
+							<a href="#">北京</a>
+						</li>
+						<li>
+							<i>C</i>
+							<a href="#">重庆</a>
+						</li>
+						<li>
+							<i>G</i>
+							<a href="#">广东</a>
+							<a href="#">广西</a>
+							<a href="#">贵州</a>
+							<a href="#">甘肃</a>
+						</li>
+						<li>
+							<i>F</i>
+							<a href="#">福建</a>
+						</li>
+						<li>
+							<i>H</i>
+							<a href="#">河北</a>
+							<a href="#">黑龙江</a>
+							<a href="#">海南</a>
+							<a href="#">湖北</a>
+							<a href="#">湖南</a>
+							<a href="#">河南</a>
+						</li>
+						<li>
+							<i>J</i>
+							<a href="#">江苏</a>
+							<a href="#">吉林</a>
+							<a href="#">江西</a>
+						</li>
+						<li>
+							<i>L</i>
+							<a href="#">辽宁</a>
+						</li>
+						<li>
+							<i>N</i>
+							<a href="#">内蒙古宁夏</a>
+							<a href="#">宁夏</a>
+						</li>
+						<li>
+							<i>Q</i>
+							<a href="#">青海</a>
+						</li>
+						<li>
+							<i>S</i>
+							<a href="#">上海</a>
+							<a href="#">山东</a>
+							<a href="#">山西</a>
+							<a href="#">四川</a>
+							<a href="#">陕西</a>
+						</li>
+						<li>
+							<i>T</i>
+							<a href="#">天津</a>
+						</li>
+						<li>
+							<i>X</i>
+							<a href="#">西藏新疆</a>
+							<a href="#">新疆</a>
+						</li>
+						<li>
+							<i>Y</i>
+							<a href="#">云南</a>
+						</li>
+						<li>
+							<i>Z</i>
+							<a href="#">浙江</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="top_right">
+					<p><a href="login.html">请登录</a><a class="regin" href="register.html">注册</a></p>
+					<li><a href="#">我的订单</a></li>
+					<li class="second">
+						<a href="#">我的医药网</a>
+						<i></i>
+						<ul>
+							<li><a href="#">我的优惠券</a></li>
+							<li><a href="#">我的收藏夹</a></li>
+							<li><a href="#">商品评价</a></li>
+							<li><a href="#">我的私人订制</a></li>
+						</ul>
+					</li>
+					<li><a href="#">帮助中心</a></li>
+					<li class="four"><a href="#">400-007-0958</a></li>
+					<li class="five"><a href="#"><i></i>手机APP</a>
+						<div class="sj_app">
+							<dl>
+								<dt><img src="img/pic_03.jpg"/></dt>
+								<dd>
+									<p>1药网客户端</p><br/>
+									<span>APP专享价更优惠</span>
+								</dd>
+							</dl>
+							<dl class="dl2">
+								<dt><img src="img/pic_06.jpg"/></dt>
+								<dd>
+									<p>1诊客户端</p><br/>
+									<span>电话问诊专家</span>
+									<span>3分钟连线专业医生</span>
+								</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--header-->
+		<div class="headercon con">
+			<h1 class="logo"><a href="#"></a></h1>
+			<div class="search">
+					<input type="text" placeholder="请输入商品名、症状、人群等"/>
+					<button class="btn">
+						 <i></i>
+					</button>
+					<p>
+					<a  class="first" href="#">森福罗</a>
+					<a href="#">雾化器</a>
+					<a href="#">西洋参</a>
+					<a href="#">伊可新</a>
+					<a href="#">儿童漫画书</a>
+					<a href="#">益安宁丸</a>
+					<a href="#">便秘</a>
+					</p>
+			</div>
+			<div class="header_ewm">
+				<img src="img/2DCodenew2.jpg"/>
+				<div class="header_cart">
+					<span class="cart_span"></span>
+					<a class="cart_a" href="shopcart.html"><em>0</em>购物车<i></i></a>
+
+				</div>
+					<!--<div class="empty_cart">
+						<span></span>
+						<p>您的购物车里还没有商品，<br/>如已添加商品，请<a href="login.html">登录</a></p>
+					</div>-->
+			</div>
+		</div>
+			<script type="text/javascript">
+				$(function(){
+					$(".header_cart .cart_a").hover(function(){
+						$(".empty_cart").css("display","block");
+					},function(){
+						$(".empty_cart").css("display","none");
+					});
+				});
+			</script>
+		<!--nav-->
+	
+<div id="nav">
+	<div class="navcon con">
+		<div class="all_sort">
+			<a class="first_a" href="#">所有商品类</a>
+			<div class="nav_box">
+				<ul class="first_ul">
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>中西药品</i></a>
+						<div class="sort_list">
+							<div class="list_left list">
+
+							</div>
+							<div class="list_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>滋补保健</i></a>
+						<div class="sort_list">
+							<div class="list_left list1">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort3.jpg" /></a>
+								<a href="#"><img src="img/sort4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>维生素钙</i></a>
+						<div class="sort_list">
+							<div class="list_left list2">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>隐形眼镜</i></a>
+						<div class="sort_list">
+							<div class="list_left list3">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort3.jpg" /></a>
+								<a href="#"><img src="img/sort4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>医疗机械，家电</i></a>
+						<div class="sort_list">
+							<div class="list_left list4">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>药妆个护</i></a>
+						<div class="sort_list">
+							<div class="list_left list4">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort4.jpg" /></a>
+								<a href="#"><img src="img/sort3.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>成人用品</i></a>
+						<div class="sort_list">
+							<div class="list_left list6">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>母婴专区</i></a>
+						<div class="sort_list">
+							<div class="list_left list7">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort3.jpg" /></a>
+								<a href="#"><img src="img/sort4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>参茸花茶</i></a>
+						<div class="sort_list">
+							<div class="list_left list8">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>口腔诊疗</i></a>
+						<div class="sort_list">
+							<div class="list_left list9">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort3.jpg" /></a>
+								<a href="#"><img src="img/sort4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+				<ul class="nav_meum">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">家庭常备</a></li>
+					<li><a href="#">乙肝</a></li>
+					<li><a href="#">抑郁症</a></li>
+					<li><a href="#">性功能障碍</a></li>
+					<li><a href="#">高血压</a></li>
+					<li><a href="#">癫痫</a></li>
+					<li class="hwg"><a href="#"><span></span>海外购</a></li>
+					
+					
+					<li class="yyw">
+						<a href="#">掌上医药网<span></span></a>
+						<div class="wx">
+							<a href="#">1药网App</a>
+							<a href="#">1诊App</a>
+							<a href="#">微信/微博</a>
+						</div>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".all_sort").hover(function(){
+					$(".nav_box").css("display","block");
+				},function(){
+					$(".nav_box").css("display","none");
+				});
+			});
+			
+		</script>
+		<!--list-->
+		<div id="banner">
+			<div class="bannercon">
+				<a href="#"><img src="img/pc_02.jpg"/></a>
+			</div>
+		</div>
+		<div id="list">
+			<div class="listcon">
+				<div class="explosion">
+					<p><img src="img/pi_01.jpg"></p>
+					<div class="btv">
+						<dl data-good-id="s1">
+							<dt><a href="#"><img src="img/drug1.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 天然维生素E 0.25g*160粒 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s2">
+							<dt><a href="#"><img src="img/drug2.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 天然维生素E 0.25g*160粒 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s3">
+							<dt><a href="#"><img src="img/drug3.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 天然维生素E 0.25g*160粒 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s4">
+							<dt><a href="#"><img src="img/drug4.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 天然维生素E 0.25g*160粒 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="sale">
+					<p><img src="img/pi_02.jpg"></p>
+					<div class="cut">
+						<dl data-good-id="s5">
+							<dt><a href="#"><img src="img/cut1.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s6">
+							<dt><a href="#"><img src="img/cut2.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s7">
+							<dt><a href="#"><img src="img/cut3.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s8">
+							<dt><a href="#"><img src="img/cut4.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s9">
+							<dt><a href="#"><img src="img/cut5.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s10">
+							<dt><a href="#"><img src="img/cut6.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s11">
+							<dt><a href="#"><img src="img/cut1.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s12">
+							<dt><a href="#"><img src="img/cut2.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s13">
+							<dt><a href="#"><img src="img/cut3.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+						<dl data-good-id="s14">
+							<dt><a href="#"><img src="img/cut4.jpg"/></a></dt>
+							<dd>
+								<h3><a href="#">养生堂 多种维生素矿物质片 0.75g*90片 </a></h3>
+								<p>药网价:<i>￥</i><span>118.0</span><br/>市场价：<em>￥118.0</em></p>
+								<a id="" class="btn" href="javascript:;"></a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			
+			
+			
+			
+			
+									<!--footer start-->
+			<!--commit-->
+			<div id="commit">
+				<div class="con commitcon">
+					<a href="#"></a>
+					<a class="a2" href="#"></a>
+					<a class="a3" href="#"></a>
+					<a class="a4" href="#"></a>
+				</div>
+			</div>
+			<!--app_part-->
+			<div class="app con">
+				<dl>
+					<dt><img src="img/td_code1.jpg"></dt>
+					<dd>
+						<h2>1药网客户端</h2>
+						<p>
+							App专享价更优惠
+							<br/>
+							购物满69免邮
+							<br/>
+							超低移动专享价
+							<br/>
+							药监认证，正品保障
+						</p>
+					</dd>
+				</dl>
+				<dl class="dl2">
+					<dt><img src="img/td_code2.jpg"></dt>
+					<dd>
+						<h2>1诊客户端</h2>
+						<p>
+							3分钟快速连线名医
+							<br/>
+							寻医生问药，一站完成
+							<br/>
+							一键提交，自动来电
+							<br/>
+							电子档案，永久追溯
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/td_code3.jpg"></dt>
+					<dd>
+						<h2>微信公众号</h2>
+						<p>
+							最全的健康资讯
+							<br/>
+							掌上购药，轻松一点
+							<br/>
+							一键问诊，方便快捷
+							<br/>
+							最新优惠，一网打尽
+						</p>
+					</dd>
+				</dl>
+			</div>
+			<!--service_part-->
+			<div class="service con">
+				<div class="serviceLeft">
+					<ul>
+						<h3>新手入门</h3>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+					<ul>
+						<h3>购物指南</h3>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">订单状态说明</a></li>
+						<li><a href="#">隐私声明</a></li>
+						<li><a href="#">发票制度</a></li>
+					</ul>
+					<ul>
+						<h3>配送服务</h3>
+						<li><a href="#">范围、时间及费用</a></li>
+						<li><a href="#">商品验货及签收</a></li>
+						<li><a href="#">门店自提</a></li>
+					</ul>
+					<ul>
+						<h3>支付方式</h3>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">网上支付</a></li>
+						<li><a href="#">银行转账</a></li>
+						<li><a href="#">激活优惠券</a></li>
+						<li><a href="#">优惠券使用指南</a></li>
+					</ul>
+					<ul>
+						<h3>售后服务</h3>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">正品保障</a></li>
+						<li><a href="#">退款规则</a></li>
+						<li><a href="#">品牌售后</a></li>
+					</ul>
+					<ul>
+						<h3>企业服务</h3>
+						<li><a href="#">供应商合作</a></li>
+						<li><a href="#">供应商入口</a></li>
+						<li><a href="#">商家入驻</a></li>
+						<li><a href="#">市场合作</a></li>
+					</ul>
+				</div>
+				<div class="serviceRight">
+					<p class="tel">400-007-0958</p>
+					<p class="time">
+						周一到周日 09:00-21:00
+						<br/>
+						（收取市话费）
+					</p>
+				</div>
+			</div>
+			<!--bottom-->
+			<div class="bottomcon con">
+				<p>
+					<a href="#">关于岗岭集团</a>|
+					<a href="#">关于1药网</a>|
+					<a style="color:#ff0000;" href="#">诚征英才</a>|
+					<a href="#">直营实体药房</a>|
+					<a href="#">互联网药品信息服务资格证</a>|
+					<a href="#">互联网药品交易资格证：粤C20150007</a>
+				</p>
+				<p>
+					<a href="#">连锁营业执照</a>|
+					<a href="#">药品经营许可证</a>|
+					<a href="#">医疗器械许可证</a>|
+					<a href="#">食品经营许可证</a>|
+					<a href="#">GSP证书</a>|
+					<a href="#">ICP粤B2-20150066</a>
+				</p>
+			</div>
+			<p class="label con">
+				<a href="#"></a>
+				<a class="two" href="#"></a>
+				<a class="three" href="#"></a>
+				<a class="four" href="#"></a>
+				<a class="five" href="#"></a>
+				<a class="six" href="#"></a>
+				<a class="seven" href="#"></a>
+				<a class="eight" href="#"></a>
+				<a class="nine" href="#"></a>
+				<a class="ten" href="#"></a>
+			</p>
+			<div class="con footcon">
+			<p class="copy"><a href="#">1药网网上药店</a>，国家药监局认证通过的合法网上药店，中国医药电子商务行业的开拓者领跑者。
+				<a href="#">粤ICP备12015869号-1</a></p>
+			<p class="adress">公司名称：广东壹号大药房连锁有限公司 公司地址：广东省广州市越秀区共和西路1号2层 联系电话：020-31067218</p>
+			<p class="last_p">Copyright (C) 2010-2015 1药网版权所有<a href="#"><i></i>公安备案号 44010402000743</a></p>
+			</div>
+	</body>
+</html>

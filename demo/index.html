@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>1药网</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+	    <script type="text/javascript" src="js/lunbo.js"></script>
+	 	<script type="text/javascript" src="js/getjson.js"></script>
+	 	<script type="text/javascript" src="js/common.js"></script>	     
+	</head>
+	<body>
+		<!--top-->
+		<div id="top">
+			<div class="topcon con">
+				<div class="top_left">
+					<p>送货至<span>北京</span><i></i></p>
+					<ul>
+						<li>
+							<i>A</i>
+							<a href="#">安徽</a>
+						</li>
+						<li>
+							<i>B</i>
+							<a href="#">北京</a>
+						</li>
+						<li>
+							<i>C</i>
+							<a href="#">重庆</a>
+						</li>
+						<li>
+							<i>G</i>
+							<a href="#">广东</a>
+							<a href="#">广西</a>
+							<a href="#">贵州</a>
+							<a href="#">甘肃</a>
+						</li>
+						<li>
+							<i>F</i>
+							<a href="#">福建</a>
+						</li>
+						<li>
+							<i>H</i>
+							<a href="#">河北</a>
+							<a href="#">黑龙江</a>
+							<a href="#">海南</a>
+							<a href="#">湖北</a>
+							<a href="#">湖南</a>
+							<a href="#">河南</a>
+						</li>
+						<li>
+							<i>J</i>
+							<a href="#">江苏</a>
+							<a href="#">吉林</a>
+							<a href="#">江西</a>
+						</li>
+						<li>
+							<i>L</i>
+							<a href="#">辽宁</a>
+						</li>
+						<li>
+							<i>N</i>
+							<a href="#">内蒙古宁夏</a>
+							<a href="#">宁夏</a>
+						</li>
+						<li>
+							<i>Q</i>
+							<a href="#">青海</a>
+						</li>
+						<li>
+							<i>S</i>
+							<a href="#">上海</a>
+							<a href="#">山东</a>
+							<a href="#">山西</a>
+							<a href="#">四川</a>
+							<a href="#">陕西</a>
+						</li>
+						<li>
+							<i>T</i>
+							<a href="#">天津</a>
+						</li>
+						<li>
+							<i>X</i>
+							<a href="#">西藏新疆</a>
+							<a href="#">新疆</a>
+						</li>
+						<li>
+							<i>Y</i>
+							<a href="#">云南</a>
+						</li>
+						<li>
+							<i>Z</i>
+							<a href="#">浙江</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="top_right">
+					<li class="in" style="border:0;"><a href="login.html">请登录</a></li>
+					<li class="zc"><a href="register.html">注册</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li class="second">
+						<a href="#">我的医药网</a>
+						<i></i>
+						<ul>
+							<li><a href="#">我的优惠券</a></li>
+							<li><a href="#">我的收藏夹</a></li>
+							<li><a href="#">商品评价</a></li>
+							<li><a href="#">我的私人订制</a></li>
+						</ul>
+					</li>
+					<li><a href="#">帮助中心</a></li>
+					<li class="four"><a href="#">400-007-0958</a></li>
+					<li class="five"><a href="#"><i></i>手机APP</a>
+						<div class="sj_app">
+							<dl>
+								<dt><img src="img/pic_03.jpg"/></dt>
+								<dd>
+									<p>1药网客户端</p><br/>
+									<span>APP专享价更优惠</span>
+								</dd>
+							</dl>
+							<dl class="dl2">
+								<dt><img src="img/pic_06.jpg"/></dt>
+								<dd>
+									<p>1诊客户端</p><br/>
+									<span>电话问诊专家</span>
+									<span>3分钟连线专业医生</span>
+								</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--header-->
+		<div class="headercon con">
+			<h1 class="logo"><a href="#"></a></h1>
+			<div class="search">
+					<input type="text" placeholder="请输入商品名、症状、人群等"/>
+					<button class="btn">
+						 <i></i>
+					</button>
+					<p>
+					<a  class="first" href="#">森福罗</a>
+					<a href="#">雾化器</a>
+					<a href="#">西洋参</a>
+					<a href="#">伊可新</a>
+					<a href="#">儿童漫画书</a>
+					<a href="#">益安宁丸</a>
+					<a href="#">便秘</a>
+					</p>
+			</div>
+			<div class="header_ewm">
+				<img src="img/2DCodenew2.jpg"/>
+				<div class="header_cart">
+					<span class="cart_span"></span>
+					<a class="cart_a" href="shopcart.html"><em>0</em>购物车<i></i></a>
+
+				</div>
+					<!--<div class="empty_cart">
+						<span></span>
+						<p>您的购物车里还没有商品，<br/>如已添加商品，请<a href="login.html">登录</a></p>
+					</div>-->
+			</div>
+		</div>
+			<script type="text/javascript">
+				$(function(){
+					$(".header_cart .cart_a").hover(function(){
+						$(".empty_cart").css("display","block");
+					},function(){
+						$(".empty_cart").css("display","none");
+					});
+				});
+			</script>
+		
+			
+
+		<!--nav-->
+		<div id="nav">
+			<div class="navcon con">
+				<div class="all_sort">
+					<a class="first_a" href="#">所有商品类</a>
+			<div class="nav_box">
+				<ul class="first_ul">
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>中西药品</i></a>
+						<div class="sort_list">
+							<div class="list_left list">
+
+							</div>
+							<div class="list_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>滋补保健</i></a>
+						<div class="sort_list">
+							<div class="list_left list1">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort3.jpg" /></a>
+								<a href="#"><img src="img/sort4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>维生素钙</i></a>
+						<div class="sort_list">
+							<div class="list_left list2">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>隐形眼镜</i></a>
+						<div class="sort_list">
+							<div class="list_left list3">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort3.jpg" /></a>
+								<a href="#"><img src="img/sort4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>医疗机械，家电</i></a>
+						<div class="sort_list">
+							<div class="list_left list4">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>药妆个护</i></a>
+						<div class="sort_list">
+							<div class="list_left list4">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort4.jpg" /></a>
+								<a href="#"><img src="img/sort3.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>成人用品</i></a>
+						<div class="sort_list">
+							<div class="list_left list6">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>母婴专区</i></a>
+						<div class="sort_list">
+							<div class="list_left list7">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort3.jpg" /></a>
+								<a href="#"><img src="img/sort4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>参茸花茶</i></a>
+						<div class="sort_list">
+							<div class="list_left list8">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort1.jpg" /></a>
+								<a href="#"><img src="img/sort2.jpg" /></a>
+							</div>
+						</div>
+					</li>
+					<li class="first_li"><a class="one_a" href="#"><span></span><i>口腔诊疗</i></a>
+						<div class="sort_list">
+							<div class="list_left list9">
+
+							</div>
+							<div class="sort_right">
+								<a class="pic_a" href="#"><img src="img/sort3.jpg" /></a>
+								<a href="#"><img src="img/sort4.jpg" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+					
+				
+				<!--勿动-->
+				<ul class="nav_meum">
+					<li><a href="#">首页</a></li>
+					<li><a href="list.html">家庭常备</a></li>
+					<li><a href="#">乙肝</a></li>
+					<li><a href="#">抑郁症</a></li>
+					<li><a href="#">性功能障碍</a></li>
+					<li><a href="#">高血压</a></li>
+					<li><a href="#">癫痫</a></li>
+					<li class="hwg"><a href="#"><span></span>海外购</a></li>
+					
+					<!--未完待续-->
+					<li class="yyw">
+						<a href="#">掌上医药网<span></span></a>
+						<div class="wx">
+							<a href="#">1药网App</a>
+							<a href="#">1诊App</a>
+							<a href="#">微信/微博</a>
+						</div>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--banner-->
+		<div id="banner">
+			<div class="bannercon con">
+				
+				<div class="bannerLeft">
+					<div class="pic">
+						<div class="bigPic"></div>
+						<ul class="num">
+						</ul>
+					</div>
+				</div>
+				
+				<div class="bannerRight">
+					<div class="bannerRT">
+						<h3>在线咨询</h3>
+						<p>
+							<a href="#">男科<i></i></a>
+							<a href="#">妇科<i></i></a>
+							<a href="#">糖尿病<i></i></a>
+							<a href="#">心脑血管<i></i></a>
+							<a href="#">肝胆科<i></i></a>
+							<a href="#">神经科<i></i></a>
+							<a href="#">肿瘤<i></i></a>
+							<a href="#">消化科<i></i></a>
+							<a href="#">风湿骨科<i></i></a>
+							<a href="#">皮肤性病<i></i></a>
+							<a href="#">眼耳鼻喉<i></i></a>
+							<a href="#">呼吸科<i></i></a>
+							<a href="#">滋补保健<i></i></a>
+							<a href="#">散光验配<i></i></a>
+							<a href="#">医疗器械<i></i></a>
+						</p>
+					</div>
+					<p class="bannerRC">
+						<a href="#"><img src="img/consult_banner.jpg"></a>
+					</p>
+					<!--未完待续-->
+					<div class="bannerRB">
+						<p class="notice">
+							<a class="a1" href="#">优质服务</a>
+							<a class="a2" href="#">公告</a>
+						</p>
+						
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd>正品保障</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd>品牌授权</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd>药监认证</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"></a></dt>
+							<dd>满79包邮</dd>
+						</dl>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--list-->
+			<div class="listcon con">
+				<p>
+					<a class="mar0" href="#"><img src="img/clock01.png"></a>
+					<a href="#"><img src="img/1.jpg"></a>
+					<a href="#"><img src="img/2.jpg"></a>
+					<a href="#"><img src="img/3.jpg"></a>
+					<a  class="mar0" href="#"><img src="img/4.jpg"></a>
+				</p>
+			</div>
+			<!--show-->
+			<div class="show con">
+				<a href="#"><img src="img/show.jpg"></a>
+			</div>
+								<!--main-->
+			<!--first_floor-->
+		<div id="main">
+			<div class="first_floor con com">
+				<div class="floor_left">
+					<h3>1F 家庭常备药</h3>
+					<ul>
+						<li><a href="#">补肾</a></li>
+						<li><a href="#">皮炎癣症</a></li>
+						<li><a href="#">补血补气</a></li>
+						<li><a href="#">腹泻</a></li>
+						<li><a href="#">鼻炎</a></li>
+						<li><a href="#">前列腺炎</a></li>
+						<li><a href="#">青春痘</a></li>
+						<li><a href="#">保肝护肝</a></li>
+						<li><a href="#">减肥瘦身</a></li>
+						<li><a href="#">男性不育症</a></li>
+						<li><a href="#">眼干眼涩</a></li>
+						<li><a href="#">感冒发烧</a></li>
+						<li><a href="#">阴道炎</a></li>
+						<li><a href="#">避孕</a></li>
+						<li><a href="#">胃炎</a></li>
+						<li><a href="#">增强抵抗力</a></li>
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu1.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">克龄蒙 戊酸雌二醇片/雌二...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu1.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">克龄蒙 戊酸雌二醇片/雌二...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu1.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">克龄蒙 戊酸雌二醇片/雌二...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu1.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">克龄蒙 戊酸雌二醇片/雌二...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu1.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">克龄蒙 戊酸雌二醇片/雌二...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--second_floor-->
+			<div class="second_floor con com">
+				<div class="floor_left">
+					<h3>2F  专科用药</h3>
+					<ul>
+						<li><a href="#">性功能障碍</a></li>
+						<li><a href="#">乙肝</a></li>
+						<li><a href="#">风湿类风湿</a></li>
+						<li><a href="#">高血压</a></li>
+						<li><a href="#">抑郁症</a></li>
+						<li><a href="#">哮喘</a></li>
+						<li><a href="#">冠心病</a></li>
+						<li><a href="#">糖尿病</a></li>
+						<li><a href="#">银屑病</a></li>
+						<li><a href="#">关节炎</a></li>
+						<li><a href="#">癫痫</a></li>
+						<li><a href="#">脱发</a></li>
+						<li><a href="#">痛风</a></li>
+						<li><a href="#">帕金森</a></li>
+						<li><a href="#">精神分裂症</a></li>
+						<li><a href="#">中风</a></li>
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+								<img src="img/photo1.jpg"/>
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu2.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">碧凯 保妇康栓 OTC包装 1...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu2.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">寿牌 蒲地蓝消炎口服液...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu2.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">普米克令舒 吸入用布地奈...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu2.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">佐力 乌灵胶囊 0.33g*9粒*...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu2.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">金戈 枸橼酸西地那非片 50mg*10片...</a>
+								<span>¥&nbsp;&nbsp;345.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--show1-->
+			<div class="show1 con">
+				<a href="#"><img src="img/show1.jpg"></a>
+			</div>
+			<!--third_floor-->
+			<div class="third_floor con com">
+				<div class="floor_left">
+					<h3>3F  医疗器械</h3>
+					<ul>
+						<li><a href="#">血压计</a></li>
+						<li><a href="#">血糖仪</a></li>
+						<li><a href="#">高血压</a></li>
+						<li><a href="#">糖尿病</a></li>
+						<li><a href="#">雾化器</a></li>
+						<li><a href="#">制氧机</a></li>
+						<li><a href="#">理疗仪/a></li>
+						<li><a href="#">家庭常备药</a></li>
+						<li><a href="#"><img src="img/a1.jpg"></a></li>
+						<li><a href="#"><img src="img/a2.jpg"></a></li>
+						<li><a href="#"><img src="img/a3.jpg"></a></li>
+						<li><a href="#"><img src="img/a4.jpg"></a></li>
+						<li><a href="#"><img src="img/a5.jpg"></a></li>
+						<li><a href="#"><img src="img/a6.jpg"></a></li>
+						<li><a href="#"><img src="img/a7.jpg"></a></li>
+						<li><a href="#"><img src="img/a8.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+								<img src="img/photo1.jpg"/>
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu3.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">碧凯 保妇康栓 OTC包装 1...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu3.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">寿牌 蒲地蓝消炎口服液...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu3.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">普米克令舒 吸入用布地奈...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu3.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">佐力 乌灵胶囊 0.33g*9粒*...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu3.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">金戈 枸橼酸西地那非片 50mg*10片...</a>
+								<span>¥&nbsp;&nbsp;345.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--four-->
+			<div class="four_floor con com">
+				<div class="floor_left">
+					<h3>4F  隐形眼镜</h3>
+					<ul>
+						<li><a href="#">血压计</a></li>
+						<li><a href="#">血糖仪</a></li>
+						<li><a href="#">高血压</a></li>
+						<li><a href="#">糖尿病</a></li>
+						<li><a href="#">雾化器</a></li>
+						<li><a href="#">制氧机</a></li>
+						<li><a href="#">理疗仪/a></li>
+						<li><a href="#">家庭常备药</a></li>
+						<li><a href="#"><img src="img/four1.jpg"></a></li>
+						<li><a href="#"><img src="img/four2.jpg"></a></li>
+						<li><a href="#"><img src="img/four3.jpg"></a></li>
+						<li><a href="#"><img src="img/four4.jpg"></a></li>
+						<li><a href="#"><img src="img/four5.jpg"></a></li>
+						<li><a href="#"><img src="img/four6.jpg"></a></li>
+						<li><a href="#"><img src="img/four7.jpg"></a></li>
+						<!--<li><a href="#"><img src="img/four8.jpg"></a></li>-->
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+								<img src="img/photo1.jpg"/>
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu4.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">碧凯 保妇康栓 OTC包装 1...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu4.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">寿牌 蒲地蓝消炎口服液...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu4.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">普米克令舒 吸入用布地奈...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu4.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">佐力 乌灵胶囊 0.33g*9粒*...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu4.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">金戈 枸橼酸西地那非片 50mg*10片...</a>
+								<span>¥&nbsp;&nbsp;345.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--five-->
+			<div class="five_floor con com">
+				<div class="floor_left">
+					<h3>5F  滋补保健</h3>
+					<ul>
+						<li><a href="#">血压计</a></li>
+						<li><a href="#">血糖仪</a></li>
+						<li><a href="#">高血压</a></li>
+						<li><a href="#">糖尿病</a></li>
+						<li><a href="#">雾化器</a></li>
+						<li><a href="#">制氧机</a></li>
+						<li><a href="#">理疗仪/a></li>
+						<li><a href="#">家庭常备药</a></li>
+						<li><a href="#"><img src="img/five1.jpg"></a></li>
+						<li><a href="#"><img src="img/five2.jpg"></a></li>
+						<li><a href="#"><img src="img/five3.jpg"></a></li>
+						<li><a href="#"><img src="img/five4.jpg"></a></li>
+						<li><a href="#"><img src="img/five5.jpg"></a></li>
+						<li><a href="#"><img src="img/five6.jpg"></a></li>
+						<li><a href="#"><img src="img/five7.jpg"></a></li>
+						<li><a href="#"><img src="img/five8.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+								<img src="img/photo1.jpg"/>
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">碧凯 保妇康栓 OTC包装 1...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">寿牌 蒲地蓝消炎口服液...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">普米克令舒 吸入用布地奈...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">佐力 乌灵胶囊 0.33g*9粒*...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">金戈 枸橼酸西地那非片 50mg*10片...</a>
+								<span>¥&nbsp;&nbsp;345.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--six-->
+			<div class="six_floor con com">
+				<div class="floor_left">
+					<h3>6F  维生素钙</h3>
+					<ul>
+						<li><a href="#">血压计</a></li>
+						<li><a href="#">血糖仪</a></li>
+						<li><a href="#">高血压</a></li>
+						<li><a href="#">糖尿病</a></li>
+						<li><a href="#">雾化器</a></li>
+						<li><a href="#">制氧机</a></li>
+						<li><a href="#">理疗仪</a></li>
+						<li><a href="#">家庭常备药</a></li>
+						<li><a href="#"><img src="img/six1.jpg"></a></li>
+						<li><a href="#"><img src="img/six2.jpg"></a></li>
+						<li><a href="#"><img src="img/six3.jpg"></a></li>
+						<li><a href="#"><img src="img/six4.jpg"></a></li>
+						<li><a href="#"><img src="img/six5.jpg"></a></li>
+						<li><a href="#"><img src="img/six6.jpg"></a></li>
+						<li><a href="#"><img src="img/six7.jpg"></a></li>
+						<li><a href="#"><img src="img/six8.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+								<img src="img/photo1.jpg"/>
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">碧凯 保妇康栓 OTC包装 1...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu4.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">寿牌 蒲地蓝消炎口服液...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu3.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">普米克令舒 吸入用布地奈...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu2.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">佐力 乌灵胶囊 0.33g*9粒*...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu1.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">金戈 枸橼酸西地那非片 50mg*10片...</a>
+								<span>¥&nbsp;&nbsp;345.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--seven-->
+			<div class="seven_floor con com">
+				<div class="floor_left">
+					<h3>7F  药妆个护</h3>
+					<ul>
+						<li><a href="#">血压计</a></li>
+						<li><a href="#">血糖仪</a></li>
+						<li><a href="#">高血压</a></li>
+						<li><a href="#">糖尿病</a></li>
+						<li><a href="#">雾化器</a></li>
+						<li><a href="#">制氧机</a></li>
+						<li><a href="#">理疗仪/a></li>
+						<li><a href="#">家庭常备药</a></li>
+						<li><a href="#"><img src="img/seven1.jpg"></a></li>
+						<li><a href="#"><img src="img/seven2.jpg"></a></li>
+						<li><a href="#"><img src="img/seven3.jpg"></a></li>
+						<li><a href="#"><img src="img/seven4.jpg"></a></li>
+						<li><a href="#"><img src="img/seven5.jpg"></a></li>
+						<li><a href="#"><img src="img/seven6.jpg"></a></li>
+						<li><a href="#"><img src="img/seven7.jpg"></a></li>
+						<li><a href="#"><img src="img/seven8.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+								<img src="img/photo1.jpg"/>
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu1.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">碧凯 保妇康栓 OTC包装 1...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu2.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">寿牌 蒲地蓝消炎口服液...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu3.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">普米克令舒 吸入用布地奈...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu4.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">佐力 乌灵胶囊 0.33g*9粒*...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">金戈 枸橼酸西地那非片 50mg*10片...</a>
+								<span>¥&nbsp;&nbsp;345.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--eight-->
+			<div class="eight_floor con com">
+				<div class="floor_left">
+					<h3>8F  计生情趣</h3>
+					<ul>
+						<li><a href="#">血压计</a></li>
+						<li><a href="#">血糖仪</a></li>
+						<li><a href="#">高血压</a></li>
+						<li><a href="#">糖尿病</a></li>
+						<li><a href="#">雾化器</a></li>
+						<li><a href="#">制氧机</a></li>
+						<li><a href="#">理疗仪/a></li>
+						<li><a href="#">家庭常备药</a></li>
+						<li><a href="#"><img src="img/eight1.jpg"></a></li>
+						<li><a href="#"><img src="img/eight2.jpg"></a></li>
+						<li><a href="#"><img src="img/eight3.jpg"></a></li>
+						<li><a href="#"><img src="img/eight4.jpg"></a></li>
+						<li><a href="#"><img src="img/eight5.jpg"></a></li>
+						<li><a href="#"><img src="img/eight6.jpg"></a></li>
+						<li><a href="#"><img src="img/eight7.jpg"></a></li>
+						<li><a href="#"><img src="img/eight8.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+								<img src="img/photo1.jpg"/>
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">碧凯 保妇康栓 OTC包装 1...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">寿牌 蒲地蓝消炎口服液...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">普米克令舒 吸入用布地奈...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">佐力 乌灵胶囊 0.33g*9粒*...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">金戈 枸橼酸西地那非片 50mg*10片...</a>
+								<span>¥&nbsp;&nbsp;345.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--nine-->
+			<div class="nine_floor con com">
+				<div class="floor_left">
+					<h3>9F  母婴用品</h3>
+					<ul>
+						<li><a href="#">血压计</a></li>
+						<li><a href="#">血糖仪</a></li>
+						<li><a href="#">高血压</a></li>
+						<li><a href="#">糖尿病</a></li>
+						<li><a href="#">雾化器</a></li>
+						<li><a href="#">制氧机</a></li>
+						<li><a href="#">理疗仪/a></li>
+						<li><a href="#">家庭常备药</a></li>
+						<li><a href="#"><img src="img/nine1.jpg"></a></li>
+						<li><a href="#"><img src="img/nine2.jpg"></a></li>
+						<li><a href="#"><img src="img/nine3.jpg"></a></li>
+						<li><a href="#"><img src="img/nine4.jpg"></a></li>
+						<li><a href="#"><img src="img/nine5.jpg"></a></li>
+						<li><a href="#"><img src="img/nine6.jpg"></a></li>
+						<li><a href="#"><img src="img/nine7.jpg"></a></li>
+						<li><a href="#"><img src="img/nine8.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="floor_right">
+					<div class="floor_rightT">
+						<div class="pic">
+							<div class="bigPic">
+								<img src="img/photo1.jpg"/>
+							</div>
+							<ul class="num"></ul>
+						</div>
+						<div class="goods">
+							<a href="#"><img src="img/flr1.jpg"/></a>
+							<a href="#"><img src="img/flr2.jpg"/></a>
+						</div>
+					</div>
+					<div class="floor_rightB">
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">碧凯 保妇康栓 OTC包装 1...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">寿牌 蒲地蓝消炎口服液...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">普米克令舒 吸入用布地奈...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">佐力 乌灵胶囊 0.33g*9粒*...</a>
+								<span>￥&nbsp;&nbsp;66.0</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/tu5.jpg"/></a><span></span></dt>
+							<dd>
+								<a href="#">金戈 枸橼酸西地那非片 50mg*10片...</a>
+								<span>¥&nbsp;&nbsp;345.0</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+										<!--main结束-->
+			<!--yqLink-->							
+			<div class="yqLink con">
+				<ul class="tab">
+					<li>品牌旗舰店</li>
+					<li>友情链接</li>
+				</ul>
+				<div class="shop">
+					<div class="brand">
+						<a href="#"></a>
+						<a class="a2" href="#"></a>
+						<a class="a3" href="#"></a>
+						<a class="a4" href="#"></a>
+						<a class="a5" href="#"></a>
+						<a class="a6" href="#"></a>
+						<a class="a7" href="#"></a>
+						<a class="a8" href="#"></a>
+						<a class="a9" href="#"></a>
+						<a class="a10" href="#"></a>
+						<a class="a11" href="#"></a>
+						<a class="a12" href="#"></a>
+						<a class="a13" href="#"></a>
+						<a class="a14" href="#"></a>
+						<a class="a15" href="#"></a>
+						<a class="a16" href="#"></a>
+						<a class="a17" href="#"></a>
+						<a class="a18" href="#"></a>
+						<a class="a19" href="#"></a>
+						<a class="a20" href="#"></a>
+					</div>
+					<div class="link">
+						<a href="#">凤凰中医</a>
+						<a href="#">中国平安官网</a>
+						<a href="#">网上药店</a>
+						<a href="#">健客</a>
+						<a href="#">药品网购</a>
+						<a href="#">有问必答知识库</a>
+						<a href="#">预约挂号</a>
+						<a href="#">心理咨询</a>
+						<a href="#">妇科疾病</a>
+						<a href="#">百济新特药房</a>
+						<a href="#">药品资讯网</a>
+						<a href="#">家庭医生在线</a>
+						<a href="#">药品</a>
+						<a href="#">39药品</a>
+						<a href="#">中华中医网</a>
+						<a href="#">预约挂号</a>
+						<a href="#">养生</a>
+						<a href="#">心理咨询</a>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function(){
+					var $li = $(".yqLink .tab li");
+					$li.addClass("normal");
+					$li.eq(0).removeClass("normal").addClass("hover");
+					$(".shop div").addClass("hide");
+					$(".shop div").eq(0).removeClass("hide").addClass("show");
+			        $li.mouseover(function(){
+			        	var $index = $(this).index();
+			        	$(this).removeClass("normal").addClass("hover").siblings().removeClass("hover")
+			        	.addClass("normal");
+			        	$(".shop div").eq($index).removeClass("hide").addClass("show").siblings()
+			        	.removeClass("show").addClass("hide");
+			        })
+			      })
+			</script>
+			
+			
+			
+			
+			
+									<!--footer start-->
+			<!--commit-->
+			<div id="commit">
+				<div class="con commitcon">
+					<a href="#"></a>
+					<a class="a2" href="#"></a>
+					<a class="a3" href="#"></a>
+					<a class="a4" href="#"></a>
+				</div>
+			</div>
+			<!--app_part-->
+			<div class="app con">
+				<dl>
+					<dt><img src="img/td_code1.jpg"></dt>
+					<dd>
+						<h2>1药网客户端</h2>
+						<p>
+							App专享价更优惠
+							<br/>
+							购物满69免邮
+							<br/>
+							超低移动专享价
+							<br/>
+							药监认证，正品保障
+						</p>
+					</dd>
+				</dl>
+				<dl class="dl2">
+					<dt><img src="img/td_code2.jpg"></dt>
+					<dd>
+						<h2>1诊客户端</h2>
+						<p>
+							3分钟快速连线名医
+							<br/>
+							寻医生问药，一站完成
+							<br/>
+							一键提交，自动来电
+							<br/>
+							电子档案，永久追溯
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/td_code3.jpg"></dt>
+					<dd>
+						<h2>微信公众号</h2>
+						<p>
+							最全的健康资讯
+							<br/>
+							掌上购药，轻松一点
+							<br/>
+							一键问诊，方便快捷
+							<br/>
+							最新优惠，一网打尽
+						</p>
+					</dd>
+				</dl>
+			</div>
+			<!--service_part-->
+			<div class="service con">
+				<div class="serviceLeft">
+					<ul>
+						<h3>新手入门</h3>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+					<ul>
+						<h3>购物指南</h3>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">订单状态说明</a></li>
+						<li><a href="#">隐私声明</a></li>
+						<li><a href="#">发票制度</a></li>
+					</ul>
+					<ul>
+						<h3>配送服务</h3>
+						<li><a href="#">范围、时间及费用</a></li>
+						<li><a href="#">商品验货及签收</a></li>
+						<li><a href="#">门店自提</a></li>
+					</ul>
+					<ul>
+						<h3>支付方式</h3>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">网上支付</a></li>
+						<li><a href="#">银行转账</a></li>
+						<li><a href="#">激活优惠券</a></li>
+						<li><a href="#">优惠券使用指南</a></li>
+					</ul>
+					<ul>
+						<h3>售后服务</h3>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">正品保障</a></li>
+						<li><a href="#">退款规则</a></li>
+						<li><a href="#">品牌售后</a></li>
+					</ul>
+					<ul>
+						<h3>企业服务</h3>
+						<li><a href="#">供应商合作</a></li>
+						<li><a href="#">供应商入口</a></li>
+						<li><a href="#">商家入驻</a></li>
+						<li><a href="#">市场合作</a></li>
+					</ul>
+				</div>
+				<div class="serviceRight">
+					<p class="tel">400-007-0958</p>
+					<p class="time">
+						周一到周日 09:00-21:00
+						<br/>
+						（收取市话费）
+					</p>
+				</div>
+			</div>
+			<!--bottom-->
+			<div class="bottomcon con">
+				<p>
+					<a href="#">关于岗岭集团</a>|
+					<a href="#">关于1药网</a>|
+					<a style="color:#ff0000;" href="#">诚征英才</a>|
+					<a href="#">直营实体药房</a>|
+					<a href="#">互联网药品信息服务资格证</a>|
+					<a href="#">互联网药品交易资格证：粤C20150007</a>
+				</p>
+				<p>
+					<a href="#">连锁营业执照</a>|
+					<a href="#">药品经营许可证</a>|
+					<a href="#">医疗器械许可证</a>|
+					<a href="#">食品经营许可证</a>|
+					<a href="#">GSP证书</a>|
+					<a href="#">ICP粤B2-20150066</a>
+				</p>
+			</div>
+			<p class="label con">
+				<a href="#"></a>
+				<a class="two" href="#"></a>
+				<a class="three" href="#"></a>
+				<a class="four" href="#"></a>
+				<a class="five" href="#"></a>
+				<a class="six" href="#"></a>
+				<a class="seven" href="#"></a>
+				<a class="eight" href="#"></a>
+				<a class="nine" href="#"></a>
+				<a class="ten" href="#"></a>
+			</p>
+			<div class="con footcon">
+			<p class="copy"><a href="#">1药网网上药店</a>，国家药监局认证通过的合法网上药店，中国医药电子商务行业的开拓者领跑者。
+				<a href="#">粤ICP备12015869号-1</a></p>
+			<p class="adress">公司名称：广东壹号大药房连锁有限公司 公司地址：广东省广州市越秀区共和西路1号2层 联系电话：020-31067218</p>
+			<p class="last_p">Copyright (C) 2010-2015 1药网版权所有<a href="#"><i></i>公安备案号 44010402000743</a></p>
+			</div>
+			<!--滚动楼层-->
+			<div class="floor">
+				<p><a href="#">今日<br/>限时购</a></p>
+				<ul>
+					<li class="active"><a href="javascript:;" class="floor_a1">1 F</a><a href="javascript:;" class="floor_a2">家庭常备药</a></li>	
+					<li><a href="javascript:;" class="floor_a1">2 F</a><a href="javascript:;" class="floor_a2">专科用药</a></li>
+					
+					<li><a href="javascript:;" class="floor_a1">3 F</a><a href="javascript:;" class="floor_a2">医疗器械</a></li>
+					
+					<li><a href="javascript:;" class="floor_a1">4 F</a><a href="javascript:;" class="floor_a2">隐形眼镜</a></li>
+					
+					<li><a href="javascript:;" class="floor_a1">5 F</a><a href="javascript:;" class="floor_a2">滋补保健</a></li>
+					
+					<li><a href="javascript:;" class="floor_a1">6 F</a><a href="javascript:;" class="floor_a2">维生素钙</a></li>
+					
+					<li><a href="javascript:;" class="floor_a1">7 F</a><a href="javascript:;" class="floor_a2">药妆个护</a></li>
+					
+					<li><a href="javascript:;" class="floor_a1">8 F</a><a href="javascript:;" class="floor_a2">计生情趣</a></li>
+					
+					<li><a href="javascript:;" class="floor_a1">9 F</a><a href="javascript:;" class="floor_a2">母婴用品</a></li>
+					
+				</ul>
+			</div>
+			<script type="text/javascript">
+			/*未完待续*/
+		$(".floor ul li").mouseenter(function() {
+				//鼠标滑上去
+				$(this).addClass("active").siblings().removeClass("active");
+			});
+			 //鼠标点击
+			var mark = 1;
+			$(".floor ul li").not(".last").click(function() {
+				mark = 2; //改变标记
+				$(".floor ul li").find("a").removeClass("active");
+				$(this).find("span").addClass("active");
+				//点击左边导航 然后跳到指定的楼层
+				var $index = $(this).index(); //找到了对应的序列号
+				//alert($index);
+				var $top = $("#main .com").eq($index).offset().top; //获取制定Louti与浏览器上面的距离
+				//alert($top);
+				$("body,html").animate({
+					scrollTop: $top
+				}, 500, function() {
+					mark = 1;
+				}); //浏览器滚动的高度
+			});
+		 //浏览器串口滚动事件
+			$(window).scroll(function() {
+				if (mark == 1) {
+					var $t = $(this).scrollTop(); //获取滚动条滚动的高度
+					//document.title = $t;
+					if ($t > 900&&$t < 5400) { //通过滚动条来判断
+						$(".floor").fadeIn(); //淡入 导航慢慢显示出来
+					} else{
+						$(".floor").fadeOut(); //淡出 导航慢慢消失
+					}
+					var $obj = $("#main .com");
+					//循环每一个Louti 然后找到最先满足条件的那个 Louti
+					$obj.each(function() {
+						var $index = $(this).index();
+						//楼层与浏览器上面的高度
+						var $height = $obj.eq($index).offset().top + $(this).height() / 2;
+//						$obj.eq($index).offset().top   $t + $(document).client.height()
+						//alert($height) 
+						if ($t < $height) {
+							$(".floor ul li").removeClass("active")
+							$(".floor ul li").eq($index).addClass("active");
+							return false;
+						}
+					});
+				}
+			});
+				
+			</script>
+			<div class="float_box">
+				<a href="#"><span>在线咨询</span><i></i></a>
+				<a href="#"><span>购物车</span><i class="i2"></i></a>
+				<a href="#"><span>用户反馈</span><i class="i3"></i></a>
+				<a class="side_top" href="#"><span>返回顶部</span><i class="i4"></i></a>
+			</div>
+			<script type="text/javascript">
+			$(function(){
+				$('.float_box a').hover(function(){
+					$(this).find("span").css("display","block");
+				},function(){
+					$(this).find("span").css("display","none");
+				});
+			$(".side_top").click(function(){
+//			$(document).scrollTop(0);
+			$('body,html').animate({scrollTop:0},500)
+		})
+			});
+			</script>
+	</body>
+
+
+</html>
